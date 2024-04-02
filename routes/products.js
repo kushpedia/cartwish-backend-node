@@ -68,7 +68,7 @@ router.get("/:id", async (req, res) => {
 // Getting products information
 router.get("/", async (req, res) => {
   const page = parseInt(req.query.page) || 1;
-  const perPage = parseInt(req.query.perPage) || 6;
+  const perPage = parseInt(req.query.perPage) || 8;
   const startIndex = (page - 1) * perPage;
   const queryCategory = req.query.category || null;
   const querySearch = req.query.search || null;
